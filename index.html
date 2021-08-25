@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>DojoWeather</h1>
+      <div class="locations">
+        <h3 onclick="alert('Loading Weather Report....')">Burbank</h3>
+        <h3 onclick="alert('Loading Weather report')">Chicago</h3>
+        <h3 onclick="alert('Loading Weather report')">Dallas</h3>
+      </div>
+    </nav>
+    <div class="currentcity">
+      <h2>San Jose</h2>
+      <p>
+        show temperature in
+        <select>
+          <option>°C</option>
+          <option>°F</option>
+        </select>
+      </p>
+    </div>
+    <div class="weatherboxcontainer">
+      <div class="weatherbox">
+        <h2>Today</h2>
+        <img src="assets\some_rain.png" class="weatherpic" />
+        <p>some rain</p>
+        <div class="temperature">
+          <p id="hot">24°</p>
+          <p id="cold">18°</p>
+        </div>
+      </div>
+      <div class="weatherbox">
+        <h2>Tomorrow</h2>
+        <img src="assets\some_sun.png" class="weatherpic" />
+        <p>some sun</p>
+        <div class="temperature">
+          <p id="hot">27°</p>
+          <p id="cold">19°</p>
+        </div>
+      </div>
+      <div class="weatherbox">
+        <h2>Friday</h2>
+        <img src="assets\some_clouds.png" class="weatherpic" />
+        <p>some clouds</p>
+        <div class="temperature">
+          <p id="hot">21°</p>
+          <p id="cold">16°</p>
+        </div>
+      </div>
+      <div class="weatherbox">
+        <h2>Saturday</h2>
+        <img src="assets\some_sun.png" class="weatherpic" />
+        <p>some sun</p>
+        <div class="temperature">
+          <p id="hot">26°</p>
+          <p id="cold">21°</p>
+        </div>
+      </div>
+    </div>
+    <div class="cookie" id="cookie">
+      <div class="cookiepic"><img src="assets\cookie.png" /></div>
+      <div>
+        <h4>Stop! Cookie time</h4>
+        <p>
+          We use cookies (sadly not the edible ones) to personalize content and
+          ads to provide social media features and to analyse our traffic.
+          <a href="#">Read more</a>
+        </p>
+      </div>
+      <button onclick="hide()">I accept</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
